@@ -1,5 +1,3 @@
-// -*- explicit-buffer-name: "CellWidget.cpp<M1-MOBJ/8-10>" -*-
-
 #include <QResizeEvent>
 #include <QPainter>
 #include <QPen>
@@ -16,11 +14,9 @@
 #include "Node.h"
 #include "Net.h"
 
-
 namespace Netlist {
 
   using namespace std;
-
 
   ostream& operator<< ( ostream& o, const QRect& rect )
   {

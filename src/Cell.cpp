@@ -1,6 +1,4 @@
-// -*- explicit-buffer-name: "Cell.cpp<M1-MOBJ/8-10>" -*-
-
-#include  <cstdlib>
+  #include  <cstdlib>
 #include  <fstream>
 #include  "XmlUtil.h"
 #include  "Cell.h"

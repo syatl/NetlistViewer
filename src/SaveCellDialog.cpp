@@ -13,7 +13,7 @@ namespace Netlist {
             QLabel* label = new QLabel();
             label->setText(tr("Enter the Cell name (without extention"));
             lineEdit_ = new QLineEdit();
-            LineEdit->setMinimumWidth(400);
+            lineEdit_->setMinimumWidth(400);
 
             QPushButton* okButton = new QPushButton();
             okButton->setText("OK");
@@ -36,8 +36,8 @@ namespace Netlist {
             vLayout->setSizeConstraint(QLayout::SetFixedSize);
             vLayout->addWidget(label);
             vLayout->addWidget(lineEdit_);
-            vLayout->addLayout(hLayout);
-            setLayout(vLayout)k
+            vLayout->addLayout(hLayout);    
+            setLayout(vLayout);
             
             connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
             connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
@@ -47,7 +47,12 @@ namespace Netlist {
         return lineEdit_->text();
     }
 
-    void SaveCellDialog::run(QString& name) {
+    void SaveCellDialog::setCellName(const QString& name) {
+        return lineEdit_->setText(name);
+    }
+
+    bool SaveCellDialog::run(QString& name) {
+        
         setCellName(name);
         int dialogResult = exec();
         name = getCellName();
