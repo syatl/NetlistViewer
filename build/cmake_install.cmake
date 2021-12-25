@@ -76,6 +76,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/OpenCellDialog.h"
     "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellWidget.h"
     "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellViewer.h"
+    "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/InstancesModel.h"
+    "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/InstancesWidget.h"
+    "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellsLib.h"
+    "/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellsModel.h"
     )
 endif()
 

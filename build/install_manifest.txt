@@ -15,3 +15,7 @@
 /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/OpenCellDialog.h
 /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/CellWidget.h
 /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/CellViewer.h
+/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/InstancesModel.h
+/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/InstancesWidget.h
+/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/CellsLib.h
+/home/samy/Documents/fac/master/S1/mobj/NetlistViewer/build/../install/include/CellsModel.h

@@ -1,11 +1,17 @@
 #include "CellViewer.h"
+#include "InstancesWidget.h"
+#include "CellsLib.h"
 
 namespace Netlist {
 
     CellViewer::CellViewer(QWidget* parent)
-        : QMainWindow(parent), cellWidget_(NULL), saveCellDialog_(new SaveCellDialog(this)), openCellDialog_(new OpenCellDialog(this))
+        :   QMainWindow(parent), cellWidget_(new CellWidget()),
+            saveCellDialog_(new SaveCellDialog(this)), openCellDialog_(new OpenCellDialog(this)), 
+            instancesWidget_(new InstancesWidget()), cellsLib_(new CellsLib())
         {
-            cellWidget_ = new CellWidget();
+            instancesWidget_->setCellViewer(this);
+            cellsLib_->setCellViewer(this);
+            
             setCentralWidget(cellWidget_);
             
             QMenu* fileMenu = menuBar()->addMenu("&File");
@@ -32,8 +38,8 @@ namespace Netlist {
             fileMenu->addAction(action);
             connect(action, SIGNAL(triggered()), this, SLOT(close()));
             
-
-
+            showCellsLib();
+            showInstancesWidget();
         }
 
     void CellViewer::saveCell() {
@@ -66,5 +72,13 @@ namespace Netlist {
 
     Cell* CellViewer::getCell() const {
         return cellWidget_->getCell();
+    }
+
+    void CellViewer::showCellsLib() {
+        cellsLib_->show();
+    }
+
+    void CellViewer::showInstancesWidget() {
+        instancesWidget_->show();
     }
 }

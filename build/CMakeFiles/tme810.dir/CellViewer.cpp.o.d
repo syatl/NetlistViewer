@@ -273,4 +273,28 @@ CMakeFiles/tme810.dir/CellViewer.cpp.o: \
  /usr/include/qt4/QtGui/qlayout.h /usr/include/qt4/QtGui/qlayoutitem.h \
  /usr/include/qt4/QtGui/qboxlayout.h /usr/include/qt4/QtGui/qlayout.h \
  /usr/include/qt4/QtGui/qgridlayout.h \
- /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/OpenCellDialog.h
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/OpenCellDialog.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/InstancesWidget.h \
+ /usr/include/qt4/QtGui/QTableView /usr/include/qt4/QtGui/qtableview.h \
+ /usr/include/qt4/QtGui/qabstractitemview.h \
+ /usr/include/qt4/QtGui/qabstractscrollarea.h \
+ /usr/include/qt4/QtCore/qabstractitemmodel.h \
+ /usr/include/qt4/QtGui/qitemselectionmodel.h \
+ /usr/include/qt4/QtCore/qset.h \
+ /usr/include/qt4/QtGui/qabstractitemdelegate.h \
+ /usr/include/qt4/QtGui/qstyleoption.h \
+ /usr/include/qt4/QtGui/qabstractspinbox.h \
+ /usr/include/qt4/QtGui/qvalidator.h /usr/include/qt4/QtCore/qlocale.h \
+ /usr/include/qt4/QtGui/qslider.h \
+ /usr/include/qt4/QtGui/qabstractslider.h /usr/include/qt4/QtGui/qstyle.h \
+ /usr/include/qt4/QtGui/qtabbar.h /usr/include/qt4/QtGui/qrubberband.h \
+ /usr/include/qt4/QtGui/QHeaderView /usr/include/qt4/QtGui/qheaderview.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/InstancesModel.h \
+ /usr/include/qt4/QtCore/QAbstractTableModel \
+ /usr/include/qt4/QtCore/qabstractitemmodel.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/Instance.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/Term.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/Node.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/Shape.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellsLib.h \
+ /home/samy/Documents/fac/master/S1/mobj/NetlistViewer/src/CellsModel.h

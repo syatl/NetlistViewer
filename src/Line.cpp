@@ -1,5 +1,3 @@
-// -*- explicit-buffer-name: "Line.cpp<M1-MOBJ/7>" -*-
-
 #include "XmlUtil.h"
 #include "Line.h"
 #include "Cell.h"

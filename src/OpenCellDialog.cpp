@@ -33,8 +33,8 @@ namespace Netlist {
             vLayout->addWidget(lineEdit_);
             vLayout->addLayout(hLayout);
             setLayout(vLayout);
-
             connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
+
             connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
         }
 
