@@ -17,6 +17,14 @@ namespace Netlist {
         return box_;
     }
 
+    int ArcShape::getStart() const {
+        return start_;
+    }
+
+    int ArcShape::getSpan() const {
+        return span_;
+    }
+
     void ArcShape::toXml(std::ostream& o) const {
         o << "<arc x1=\"" << box_.getX1() << "\" y1=\"" << box_.getY1() << "\" x2=\"" << box_.getX2() << "\" y2=\"" << box_.getY2() << "\" start=\"" << start_ << "\" span=\"" << span_ << "\"/>" << std::endl;
     }

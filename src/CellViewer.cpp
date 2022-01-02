@@ -37,7 +37,7 @@ namespace Netlist {
             action->setVisible(true);
             fileMenu->addAction(action);
             connect(action, SIGNAL(triggered()), this, SLOT(close()));
-            
+            connect(this, SIGNAL(cellLoaded()), cellsLib_->getBaseModel(), SLOT(updateDatas()));
             showCellsLib();
             showInstancesWidget();
         }
@@ -62,12 +62,15 @@ namespace Netlist {
         if(OpenCellDialog::run(cname)){
             if((cell = Cell::find((cname.toStdString()))) == NULL)
                 cell = Cell::load(cname.toStdString());
+
+            emit cellLoaded();
             setCell(cell);
         } 
     }
 
     void CellViewer::setCell(Cell* cell) {
         cellWidget_->setCell(cell);
+        instancesWidget_->setCell(cell);
     }
 
     Cell* CellViewer::getCell() const {

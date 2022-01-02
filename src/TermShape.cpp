@@ -26,6 +26,10 @@ namespace Netlist {
         return y_;
     }
 
+    TermShape::NameAlign TermShape::getAlign() const {
+        return align_;
+    }
+
     std::string alignToString(TermShape::NameAlign a) {
         switch(a){
             case(TermShape::BottomLeft):    return "bottom_left"; break;

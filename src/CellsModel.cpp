@@ -23,7 +23,7 @@ namespace Netlist {
     }
 
     QVariant CellsModel::data(const QModelIndex& index, int role) const {
-        if(!cell_ or !index.isValid()) return QVariant();
+        if(!index.isValid()) return QVariant();
         if(role == Qt::DisplayRole){
             int row = index.row();
             if(index.column() == 0)
@@ -38,6 +38,10 @@ namespace Netlist {
         if(section == 0)
             return "Cell";
         return QVariant();
+    }
+
+    void CellsModel::updateDatas() {
+        emit layoutChanged();
     }
 
 }

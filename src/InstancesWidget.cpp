@@ -22,7 +22,7 @@ namespace Netlist {
         horizontalHeader->setStretchLastSection(true);
 
         QHeaderView* verticalHeader = view_->verticalHeader();
-        verticalHeader->setVisible(false);
+        verticalHeader->setVisible(true);
 
         QHBoxLayout* hlayout = new QHBoxLayout();
         hlayout->addStretch();

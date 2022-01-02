@@ -11,7 +11,7 @@ namespace Netlist {
         : QDialog(parent), lineEdit_(NULL)
         {
             QLabel* label = new QLabel();
-            label->setText(tr("Enter the Cell name (without extention"));
+            label->setText(tr("Enter the Cell name (without extention)"));
             lineEdit_ = new QLineEdit();
             lineEdit_->setMinimumWidth(400);
 

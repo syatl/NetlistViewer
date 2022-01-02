@@ -1,5 +1,3 @@
-# -*- explicit-buffer-name: "CMakeLists.txt<M1-MOBJ/8-10>" -*-
-#
 # To display executed commands, use:
 #     > cmake -DCMAKE_VERBOSE_MAKEFILE:STRING=YES ../src
 
@@ -72,7 +70,7 @@
 
            qt4_wrap_cpp( mocCpps      ${mocIncludes} )
 
-         add_executable( tme810       ${cpps} ${mocCpps} )
-  target_link_libraries( tme810       ${QT_LIBRARIES} ${LIBXML2_LIBRARIES} )
-                install( TARGETS      tme810                      DESTINATION bin )
+         add_executable( NetlistViewer ${cpps} ${mocCpps} )
+  target_link_libraries( NetlistViewer ${QT_LIBRARIES} ${LIBXML2_LIBRARIES} )
+                install( TARGETS       NetlistViewer                      DESTINATION bin )
                 install( FILES        ${includes} ${mocIncludes}  DESTINATION include )

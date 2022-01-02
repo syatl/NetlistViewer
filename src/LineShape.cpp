@@ -10,6 +10,14 @@ namespace Netlist {
     LineShape::~LineShape()
         {}
 
+    Point LineShape::getPoint1() const {
+        return Point(x1_, y1_);
+    }
+
+    Point LineShape::getPoint2() const {
+        return Point(x2_, y2_);
+    }
+
     Box LineShape::getBoundingBox() const {
         return Box(x1_, y1_, x2_, y2_);
     }

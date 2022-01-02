@@ -20,8 +20,10 @@ namespace Netlist {
                           CellViewer          ( QWidget* parent=NULL );
         virtual           ~CellViewer          (){};
                 Cell*     getCell             () const;
-        inline  CellsLib* getCellsLib         () { return cellsLib_; }  
+        inline  CellsLib* getCellsLib         () { return cellsLib_; } 
 
+    signals: 
+                void      cellLoaded          ();
     public slots:
                 void      setCell             ( Cell* );
                 void      saveCell            ();

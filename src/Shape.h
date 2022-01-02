@@ -46,6 +46,7 @@ namespace Netlist {
             Term* getTerm() const;
             int getX() const;
             int getY() const;
+            NameAlign getAlign() const;
             void toXml(std::ostream& o) const;
             static TermShape* fromXml(Symbol* s, xmlTextReaderPtr);
 
@@ -61,6 +62,8 @@ namespace Netlist {
             LineShape(Symbol* s, int x1, int y1, int x2, int y2);
             ~LineShape();
             Box getBoundingBox() const;
+            Point getPoint1() const;
+            Point getPoint2() const;
             void toXml(std::ostream& o) const;
             static LineShape* fromXml(Symbol* s, xmlTextReaderPtr);
         private:
@@ -88,6 +91,8 @@ namespace Netlist {
             ArcShape(Symbol* s, int start, int span, int x1, int y1, int x2, int y2);
             ~ArcShape();
             Box getBoundingBox() const;
+            int getStart() const;
+            int getSpan() const;
             void toXml(std::ostream& o) const;
             static ArcShape* fromXml(Symbol* s, xmlTextReaderPtr);
         private:
